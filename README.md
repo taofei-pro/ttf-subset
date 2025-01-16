@@ -27,10 +27,10 @@ import (
 
 func main() {
   in, err := ioutil.ReadFile("./data/font.ttf")
-	if err != nil {
-		panic(err)
-	}
+  if err != nil {
+    panic(err)
+  }
   words := "hello world"
-	content := ttfsubset.UTF8CutFont(in, words)
+  content := ttfsubset.UTF8CutFont(in, words)
 }
 ```
